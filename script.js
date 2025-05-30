@@ -36,12 +36,14 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-for (let i = 0; i <5; i++){
-    let c = getComputerChoice()
-    let h = getHumanChoice()
-    playRound(h, c);
+function playGame(){
+    for (let i = 0; i <5; i++){
+        let c = getComputerChoice()
+        let h = getHumanChoice()
+        playRound(h, c);
+    }
+    console.log(`Human score: ${humanScore}`);
+    console.log(`Computer score: ${computerScore}`);
 }
 
-console.log(`Human score: ${humanScore}`);
-console.log(`Computer score: ${computerScore}`);
-
+playGame();
